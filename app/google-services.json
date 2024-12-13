@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183207356842",
+    "project_id": "notifyotpdemo",
+    "storage_bucket": "notifyotpdemo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183207356842:android:007da027022ecaafea63d3",
+        "android_client_info": {
+          "package_name": "com.m3tech.notifyotpdemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-YfIN7IUyPF_9zuuFDRJ0EMt98D5nvvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
