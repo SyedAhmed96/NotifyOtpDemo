@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    `maven-publish` // Maven publish plugin
 }
 
 android {
@@ -48,4 +49,19 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.activity:activity-ktx:1.7.1")
+}
+
+// Publishing configuration
+configure<PublishingExtension> {
+    publications.create<MavenPublication>("m3notify") {
+        groupId = "com.m3tech.m3notify"
+        artifactId = "m3notify"
+        version = "1.0"
+        pom.packaging = "jar"
+        artifact("$buildDir/libs/MyPlugin.jar")
+
+    }
+    repositories {
+        mavenLocal()
+    }
 }
